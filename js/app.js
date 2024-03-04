@@ -21,7 +21,6 @@ const età = parseInt(prompt('inserisci la tua età'));//number
 
 const prezzo = (0.21) * km;//number
 //stampare il prezzo finale con massimo 2 decimali per indicare i centesimi
-alert(parseInt( prezzo.toFixed(2))); //number
 
 
 
@@ -32,13 +31,17 @@ alert(parseInt( prezzo.toFixed(2))); //number
 //SE l'utente è minorenne allora
 //const prezzo scontato del 20% 
 
+let prezzoScontato;
+
 if (età < 18){
-    console.log('il biglietto costa euro ' + (prezzo - ((prezzo * 20) / 100)));//string
+    prezzoScontato = (prezzo - ((prezzo * 20) / 100)); // decimal
+    console.log('il biglietto costa euro ' + prezzoScontato.toFixed(2));//string
 } 
 //ALTRIMENTI SE l'utente è over65 allora
 // const prezzo scontato del 40%
 else if (età >= 65){
-    console.log('il biglietto costa euro ' + (prezzo - ((prezzo * 40) / 100)));//string
+    prezzoScontato = (prezzo - ((prezzo * 40) / 100)) //decimal
+    console.log('il biglietto costa euro ' + prezzoScontato.toFixed(2));//string
 }
 //se l'utente non è nè minorenne ne over 65 pagherà il prezzo pieno
 else{
