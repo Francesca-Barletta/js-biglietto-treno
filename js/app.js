@@ -33,15 +33,15 @@ alert( prezzo.toFixed(2));//number
 //const prezzo scontato del 20% 
 
 if (età < 18){
-    console.log('il biglietto costa euro ' + (prezzo - ((prezzo * 20) / 100)));
+    console.log('il biglietto costa euro ' + (prezzo - ((prezzo * 20) / 100)));//string
 } 
 //ALTRIMENTI SE l'utente è over65 allora
 // const prezzo scontato del 40%
 else if (età >= 65){
-    console.log('il biglietto costa euro ' + (prezzo - ((prezzo * 40) / 100)));
+    console.log('il biglietto costa euro ' + (prezzo - ((prezzo * 40) / 100)));//string
 }
 //se l'utente non è nè minorenne ne over 65 pagherà il prezzo pieno
 else{
-    console.log('il biglietto costa euro ' + (prezzo))
+    console.log('il biglietto costa euro ' + (prezzo));//string
 }
 
