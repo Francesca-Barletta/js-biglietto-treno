@@ -21,7 +21,7 @@ const età = parseInt(prompt('inserisci la tua età'));//number
 
 const prezzo = (0.21) * km;//number
 //stampare il prezzo finale con massimo 2 decimali per indicare i centesimi
-alert( Math.round(prezzo * 100) / 100); //number
+alert(parseInt( prezzo.toFixed(2))); //number
 
 
 
