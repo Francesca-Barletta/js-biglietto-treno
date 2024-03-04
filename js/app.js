@@ -24,7 +24,7 @@ const prezzo = (0.21) * km;//number
 
 
 
-// definire se l'utente è minerenne o over 65 
+// definire se l'utente è minerenne o over65 
 //l'utente minorenne avrà età minore di 18
 //l'utente over 65 avrà età maggiore/uguale di 65
 
